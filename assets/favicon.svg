@@ -1,9 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="24" fill="#e6f6ff"/>
-  <g transform="translate(16,18)">
-    <circle cx="48" cy="28" r="18" fill="#9ee0ff" stroke="#6ac0ff" stroke-width="2"/>
-    <g fill="#9ee0ff">
-      <path d="M8 62c6-2 8-6 12-10s8-2 8-2 2 6 8 10 14 2 14 2v6s-12 6-28 6-32-6-32-6z"/>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#090B10"/>
+  <rect x="1" y="1" width="126" height="126" rx="27" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <defs>
+    <linearGradient id="glow" x1="20" y1="20" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <!-- Background subtle glow -->
+  <circle cx="64" cy="64" r="32" fill="url(#glow)" opacity="0.25" filter="url(#blurFilter)"/>
+  <!-- Octopus head / cloud dome -->
+  <path d="M40 56C40 42.7452 50.7452 32 64 32C77.2548 32 88 42.7452 88 56C88 64.5 83 71.5 76 75V78C76 79.1 75.1 80 74 80H54C52.9 80 52 79.1 52 78V75C45 71.5 40 64.5 40 56Z" stroke="url(#glow)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Eyes -->
+  <circle cx="56" cy="54" r="3.5" fill="#38BDF8"/>
+  <circle cx="72" cy="54" r="3.5" fill="#38BDF8"/>
+  <!-- Tentacles / Connection nodes -->
+  <path d="M44 80C40 85 36 90 32 88C28 86 30 78 36 76" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 82C50 88 47 94 43 96C39 98 39 90 42 84" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 82C59 89 58 96 61 98C64 100 66 93 64 84" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M68 82C69 89 70 96 67 98C64 100 62 93 64 84" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 82C78 88 81 94 85 96C89 98 89 90 86 84" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M84 80C88 85 92 90 96 88C100 86 98 78 92 76" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
 </svg>
